@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LuSend } from "react-icons/lu";
 
 const ChatInput = ({ onSend }) => {
   const [inputText, setInputText] = useState("");
@@ -12,7 +13,7 @@ const ChatInput = ({ onSend }) => {
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter" && !event.shiftKey) {
-      event.preventDefault(); // Prevents a new line from being added
+      event.preventDefault(); 
       handleSubmit();
     }
   };
@@ -21,11 +22,12 @@ const ChatInput = ({ onSend }) => {
     <div className="chat-input">
       <textarea
         placeholder="Type your text..."
+        
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
-        onKeyDown={handleKeyPress} // Handles Enter key press
+        onKeyDown={handleKeyPress} 
       />
-      <button className="chat-button" onClick={handleSubmit}>Send</button>
+      <button className="chat-button send-button" onClick={handleSubmit}><LuSend /></button>
     </div>
   );
 };

@@ -4,7 +4,7 @@ const TranslateButton = ({ onTranslate, setTargetLang }) => {
   return (
     <div>
       <select className="translation-controls" onChange={(e) => setTargetLang(e.target.value)}>
-        <option value="en">Select a Language</option>
+        <option value="en" disabled>Select a Language</option>
         <option value="en">English</option>
         <option value="pt">Portuguese</option>
         <option value="es">Spanish</option>
