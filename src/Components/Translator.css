@@ -1,0 +1,60 @@
+/* Translator.css */
+.translator-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .translator-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .translator-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 80px;
+  }
+  
+  .translator-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+  
+  .translator-button {
+    width: 100%;
+    background: #F0D800;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  
+  .translator-button:hover {
+    background: #d9c000;
+  }
+  
+  .translator-result {
+    margin-top: 12px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+  }
+  
+  .translator-result-title {
+    font-weight: 600;
+  }
+  
